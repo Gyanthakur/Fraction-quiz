@@ -4,6 +4,9 @@ An engaging, visual web-based quiz game that teaches fraction addition and subtr
 
 ## ✨ Features
 
+https://github.com/user-attachments/assets/1e20d065-5d1f-4191-aceb-00df9a6de3bc
+
+
 ### 🎮 Interactive Gameplay
 
 - **Drag & Drop Interface**: Visually manipulate slices to understand fraction operations
