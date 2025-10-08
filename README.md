@@ -2,20 +2,6 @@
 
 An engaging, visual web-based quiz game that teaches fraction addition and subtraction to students in grades 4-7 through interactive slice manipulation.
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [How to Play](#how-to-play)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Game Mechanics](#game-mechanics)
-- [Educational Objectives](#educational-objectives)
-- [Browser Compatibility](#browser-compatibility)
-- [Contributing](#contributing)
-
-
 ## ✨ Features
 
 ### 🎮 Interactive Gameplay
@@ -43,6 +29,20 @@ An engaging, visual web-based quiz game that teaches fraction addition and subtr
 - **Smooth Animations**: Professional transitions and hover effects
 
 ## 🎥 Demo
+<img width="1909" height="870" alt="image" src="https://github.com/user-attachments/assets/57a4c4db-03c6-4b33-aa22-59cd5f81a349" />
+
+<img width="1895" height="868" alt="image" src="https://github.com/user-attachments/assets/147df96e-db28-4f00-b739-79a142661896" />
+
+<img width="1884" height="873" alt="image" src="https://github.com/user-attachments/assets/a2d2582f-493e-4a45-a646-5b1f22a55eed" />
+
+<img width="1894" height="875" alt="image" src="https://github.com/user-attachments/assets/01b944d7-3e53-477d-bea8-fb4a6d692052" />
+
+<img width="1888" height="876" alt="image" src="https://github.com/user-attachments/assets/663921df-0a3b-4570-9c1f-83139050e837" />
+
+<img width="1887" height="871" alt="image" src="https://github.com/user-attachments/assets/4e80db60-97c2-4ad6-8f49-d30b38916f49" />
+
+<img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/23f430fc-f0c3-4113-8a86-14526213d9eb" />
+
 
 ### Addition Problem
 
