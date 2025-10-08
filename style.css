@@ -1,0 +1,362 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	min-height: 100vh;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 900px;
+	width: 100%;
+	padding: 40px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	color: #667eea;
+	margin-bottom: 10px;
+	font-size: 2.5em;
+}
+
+.subtitle {
+	text-align: center;
+	color: #666;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+}
+
+/* Start Screen */
+.start-screen {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+.start-content {
+	background: #f8f9ff;
+	padding: 30px;
+	border-radius: 15px;
+	margin: 30px 0;
+}
+
+.start-content p {
+	font-size: 1.3em;
+	margin: 15px 0;
+	color: #333;
+}
+
+.btn-start {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	font-size: 1.5em;
+	padding: 18px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.3s;
+	box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-start:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Quiz Screen */
+.quiz-screen {
+	animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#scoreSection {
+	text-align: right;
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #f0f4ff;
+	border-radius: 10px;
+	color: #667eea;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#currentQ {
+	color: #764ba2;
+}
+
+#score {
+	color: #34a853;
+	font-size: 1.3em;
+}
+
+.operation-badge {
+	text-align: center;
+	padding: 8px 20px;
+	margin: 15px auto;
+	width: fit-content;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.pizza-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.pizza-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fraction-label {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 8px;
+	min-height: 25px;
+}
+
+.op {
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #667eea;
+	margin: 0 15px;
+}
+
+canvas {
+	background: #fffef7;
+	border-radius: 50%;
+	border: 3px solid #667eea;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+canvas:hover {
+	transform: scale(1.05);
+}
+
+.instruction {
+	text-align: center;
+	color: #ff6b6b;
+	font-weight: bold;
+	margin: 20px 0;
+	font-size: 1.1em;
+	min-height: 30px;
+}
+
+/* Answer Section with Vertical Fraction */
+.answer-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin: 30px 0;
+	flex-wrap: wrap;
+}
+
+.answer-label {
+	font-weight: bold;
+	color: #333;
+	font-size: 1.2em;
+}
+
+.fraction-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.fraction-input input[type="number"] {
+	width: 80px;
+	padding: 10px;
+	font-size: 1.3em;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	text-align: center;
+	transition: border-color 0.3s;
+}
+
+.fraction-input input[type="number"]:focus {
+	outline: none;
+	border-color: #667eea;
+}
+
+.fraction-line {
+	width: 80px;
+	height: 3px;
+	background: #333;
+	margin: 0;
+}
+
+button {
+	padding: 10px 25px;
+	font-size: 1.1em;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+.btn-check {
+	background: #34a853;
+	color: white;
+	padding: 12px 30px;
+	font-size: 1.2em;
+}
+
+.btn-check:hover {
+	background: #2d9148;
+	transform: translateY(-2px);
+}
+
+.btn-check:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.button-row {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.btn-hint {
+	background: #ffa500;
+	color: white;
+}
+
+.btn-hint:hover {
+	background: #ff8c00;
+	transform: translateY(-2px);
+}
+
+.btn-next {
+	background: #667eea;
+	color: white;
+	font-size: 1.2em;
+}
+
+.btn-next:hover {
+	background: #5568d3;
+	transform: translateY(-2px);
+}
+
+.feedback {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 20px 0;
+	min-height: 30px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.feedback.correct {
+	color: #34a853;
+	background: #e6f4ea;
+}
+
+.feedback.incorrect {
+	color: #ea4335;
+	background: #fce8e6;
+}
+
+.final-score {
+	text-align: center;
+	padding: 40px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border-radius: 15px;
+	margin-top: 30px;
+}
+
+.final-score h2 {
+	color: white;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.final-score p {
+	font-size: 1.5em;
+	margin-bottom: 25px;
+}
+
+#finalScoreValue {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #ffd700;
+}
+
+.btn-restart {
+	background: white;
+	color: #667eea;
+	font-size: 1.2em;
+	padding: 12px 30px;
+}
+
+.btn-restart:hover {
+	background: #f0f0f0;
+	transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+	.container {
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	.pizza-row {
+		gap: 5px;
+	}
+
+	canvas {
+		width: 100px !important;
+		height: 100px !important;
+	}
+
+	.op {
+		font-size: 1.5em;
+		margin: 0 5px;
+	}
+
+	.fraction-input input[type="number"] {
+		width: 60px;
+		font-size: 1.1em;
+	}
+
+	.fraction-line {
+		width: 60px;
+	}
+}

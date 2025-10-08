@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fraction Addition & Subtraction Quiz</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Start Screen -->
+			<div id="startScreen" class="start-screen">
+				<h1>Fraction Quiz</h1>
+				<p class="subtitle">
+					Master Addition & Subtraction with Interactive Pizzas!
+				</p>
+				<div class="start-content">
+					<p>📚 You'll solve 5 fraction problems</p>
+					<p>🎯 Drag slices to visualize operations</p>
+					<p>✨ Learn while having fun!</p>
+				</div>
+				<button id="startBtn" class="btn-start">🚀 Start Quiz</button>
+			</div>
+
+			<!-- Quiz Screen -->
+			<div id="quizScreen" class="quiz-screen" style="display: none">
+				<h1>Fraction Quiz</h1>
+
+				<div id="scoreSection">
+					Question <span id="currentQ">1</span> of 5 | Score:
+					<span id="score">0</span>
+				</div>
+
+				<div id="operationType" class="operation-badge"></div>
+
+				<div class="pizza-row">
+					<div class="pizza-container">
+						<div class="fraction-label" id="labelA"></div>
+						<canvas id="pizzaA" width="140" height="140"></canvas>
+					</div>
+					<span class="op" id="operator">+</span>
+					<div class="pizza-container">
+						<div class="fraction-label" id="labelB"></div>
+						<canvas id="pizzaB" width="140" height="140"></canvas>
+					</div>
+					<span class="op">=</span>
+					<div class="pizza-container">
+						<div class="fraction-label" id="labelResult">?</div>
+						<canvas id="pizzaResult" width="140" height="140"></canvas>
+					</div>
+				</div>
+
+				<div id="instruction" class="instruction"></div>
+
+				<div class="answer-section">
+					<label class="answer-label">Your Answer:</label>
+					<div class="fraction-input">
+						<input type="number" id="ansNum" placeholder="Num" min="0" />
+						<div class="fraction-line"></div>
+						<input type="number" id="ansDen" placeholder="Den" min="1" />
+					</div>
+					<button id="checkBtn" class="btn-check">✓ Check</button>
+				</div>
+
+				<div id="feedback" class="feedback"></div>
+
+				<div class="button-row">
+					<button id="hintBtn" class="btn-hint">💡 Hint</button>
+					<button id="nextBtn" class="btn-next" style="display: none">
+						Next Question →
+					</button>
+				</div>
+			</div>
+
+			<!-- Final Score Screen -->
+			<div id="finalScore" class="final-score" style="display: none">
+				<h2>🎉 Quiz Complete! 🎉</h2>
+				<p>Your final score: <span id="finalScoreValue"></span> out of 5</p>
+				<button id="restartBtn" class="btn-restart">🔄 Start New Quiz</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
