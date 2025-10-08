@@ -1,4 +1,4 @@
-# 🍕 Fraction Quiz - Interactive Learning Game
+#  Fraction Quiz - Interactive Learning Game
 
 An engaging, visual web-based quiz game that teaches fraction addition and subtraction to students in grades 4-7 through interactive slice manipulation.
 
@@ -337,6 +337,6 @@ For issues, questions, or suggestions:
 
 ---
 
-**Happy Learning! 🍕📚✨**
+**Happy Learning! 📚✨**
 
 Made with passion for education and interactive learning.
